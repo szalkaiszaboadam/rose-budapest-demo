@@ -13,11 +13,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TÜRKIZ BUDAPEST Demo",
+  title: "ROSE MEZE & COCKTAIL BAR Demo",
   description: "Készítette a SONAWEB.",
     icons: {
-    icon: "/turkiz-favicon.png", // <--- EZT A SORT ADD HOZZÁ
-    //apple: "/turkiz-favicon.png", // (Opcionális: Apple ikonnak is beteheted ugyanazt)
+    icon: "rose-favicon.png", // <--- EZT A SORT ADD HOZZÁ
+    //apple: "/rose-favicon.png", // (Opcionális: Apple ikonnak is beteheted ugyanazt)
   },
 };
 
