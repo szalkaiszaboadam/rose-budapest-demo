@@ -41,7 +41,7 @@ const TurkizLogo = ({ isWhite = false, isScrolled = false }: { isWhite?: boolean
 
   return (
     <div className="relative w-full h-full flex items-center justify-center overflow-visible">
-      <svg viewBox="0 0 190.58 260.84" className="w-full h-full transition-all duration-700 ease-[0.22,1,0.36,1] overflow-visible" style={{transform: isScrolled ? "translateY(22%) scale(1.45)" : "translateY(0%) scale(1)"}} xmlns="http://www.w3.org/2000/svg">
+      <svg viewBox="0 0 190.58 260.84" className="w-full h-full transition-all duration-700 ease-[0.22,1,0.36,1] overflow-visible" style={{ transform: isScrolled ? "translateY(22%) scale(1.45)" : "translateY(0%) scale(1)" }} xmlns="http://www.w3.org/2000/svg">
         <g className="transition-colors duration-700 ease-out">
           <path fill={iconColor} d="M75.71,156.35V136.84L95.4,118.05l19.68,18.79v19.51l-19.69,8Zm-39-15.69L28.52,122,43,108.6H70.81v26.32L56.48,148.6Zm39-32.06h8.9l6.61,6.84L75.71,130.25Zm23.86,6.84,6.61-6.85h8.9v21.66ZM120,134.92V108.59h27.77L162.27,122l-8.17,18.64-19.79,7.94ZM64.08,89.14l6.73,5.69v9.11H48.07ZM120,94.83l6.73-5.69,16,14.8H120Zm0-20.23V65.5h22.72l-16,14.8Zm9,10.1L149.7,65.5h19.83l9.09,19.26-9.05,19.18H149.74Zm-116.8,0L21.19,65.5H41l20.8,19.24-20.76,19.2H21.22ZM48,65.5H70.77v9.1L64,80.3ZM75.71,92.74l-9.51-8,9.47-8V65.5h11l8.64-8.93L104,65.5h11.06V76.69l9.5,8-9.47,8v11.2H104l-8.64,8.93-8.63-8.93H75.71Zm0-53.55L91.18,54l-6.61,6.84h-8.9ZM99.53,54l15.52-14.81V60.84h-8.9Zm-71-6.58,8.12-18.13,19.86-8.43,14.3,13.65V60.84H43ZM120,34.51l14.32-13.67,19.8,7.94,8.16,18.63L147.71,60.84H120ZM75.67,32.59V13.08l19.69-8,19.69,8V32.59L95.36,51.38ZM95.35,0l-7.3,3L70.77,10v17.9L57.56,15.3,39.43,23l-6.58,2.79L23,48.83l13,12H18l-1.76,3.73h0l0,.06L10,77.74l0-.06-3.21,7,3.31,7.07,7.93,16.81H36l-13,12,9.87,23.63L57.76,154l13.05-12.46v17.59l24.58,9.68L120,159.11V141.52L133,154l24.83-9.77,2.8-6.18-.12.05,7.53-17.19-13.3-12.3h18l7.93-16.8L184,84.88l-5.6-12-5.68-12h-18l13.19-12.2-10.1-23.42-6.44-2.58-18.24-7.32L120,27.91V10L102.44,2.89Z" />
           <rect fill={textColor} x="49.57" y="39.53" width="10.16" height="10.16" className="transition-colors duration-700" />
@@ -53,8 +53,8 @@ const TurkizLogo = ({ isWhite = false, isScrolled = false }: { isWhite?: boolean
           <rect fill={textColor} x="90.29" y="23.15" width="10.16" height="10.16" transform="translate(7.97 75.7) rotate(-45)" className="transition-colors duration-700" />
           <rect fill={textColor} x="90.29" y="135.55" width="10.16" height="10.16" transform="translate(-71.51 108.63) rotate(-45)" className="transition-colors duration-700" />
         </g>
-        <g className="transition-all duration-500 ease-[0.22,1,0.36,1]" style={{transform: isScrolled ? "translateY(30px)" : "translateY(0px)", opacity: isScrolled ? 0 : 1, pointerEvents: isScrolled ? "none" : "auto"}}>
-          <text style={{fontSize: "15px", fontFamily: "GillSans, Gill Sans", letterSpacing: "0.21em"}} transform="translate(49 257.38)" fill={textColor} className="transition-colors duration-700">
+        <g className="transition-all duration-500 ease-[0.22,1,0.36,1]" style={{ transform: isScrolled ? "translateY(30px)" : "translateY(0px)", opacity: isScrolled ? 0 : 1, pointerEvents: isScrolled ? "none" : "auto" }}>
+          <text style={{ fontSize: "15px", fontFamily: "GillSans, Gill Sans", letterSpacing: "0.21em" }} transform="translate(49 257.38)" fill={textColor} className="transition-colors duration-700">
             <tspan>B</tspan><tspan x="11.64" y="0">U</tspan><tspan x="25.48" y="0">D</tspan><tspan x="39.27" y="0">A</tspan><tspan x="52.41" y="0">P</tspan><tspan x="63.06" y="0">E</tspan><tspan x="73.69" y="0">S</tspan><tspan x="83.64" y="0">T</tspan>
           </text>
           <polygon fill={textColor} points="25.94 199.67 4.97 199.67 3.27 198.01 0 205.19 6.99 201.6 12.65 201.6 12.65 228.19 9.24 231.87 21.66 231.87 18.26 228.19 18.26 201.6 23.97 201.6 30.91 205.19 27.69 198.01 25.94 199.67" className="transition-colors duration-700" />
@@ -84,10 +84,24 @@ const staggerContainer: Variants = {
 export default function RoseLuxury() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isSolidBg, setIsSolidBg] = useState(false);
- 
+
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
-const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(true);
+
+  // --- ÚJ: Popup állapota ---
+  const [showEventPopup, setShowEventPopup] = useState(false);
+
+// --- ÚJ: Popup időzítése a preloader UTÁN (Gyorsítva!) ---
+  useEffect(() => {
+    if (!isLoading) {
+      // Mindössze 1 másodpercet vár a preloader után
+      const popupTimer = setTimeout(() => {
+        setShowEventPopup(true);
+      }, 1000);
+      return () => clearTimeout(popupTimer);
+    }
+  }, [isLoading]);
 
   // --- PRELOADER: Inicializálás ---
   useEffect(() => {
@@ -151,7 +165,7 @@ const [isLoading, setIsLoading] = useState(true);
       if (carouselRef.current) setScrollRange(carouselRef.current.scrollWidth - window.innerWidth);
     };
     updateRange();
-    setTimeout(updateRange, 500); 
+    setTimeout(updateRange, 500);
     window.addEventListener("resize", updateRange);
     return () => window.removeEventListener("resize", updateRange);
   }, []);
@@ -160,22 +174,31 @@ const [isLoading, setIsLoading] = useState(true);
   const smoothHorizontalProgress = useSpring(horizontalProgress, { stiffness: 300, damping: 30, mass: 0.5, restDelta: 0.001 });
   const horizontalX = useTransform(smoothHorizontalProgress, [0, 1], [0, -scrollRange]);
 
-useMotionValueEvent(scrollY, "change", (latest) => {
+  useMotionValueEvent(scrollY, "change", (latest) => {
     setIsScrolled(latest > 40);
 
     if (typeof window !== "undefined") {
-      const heroHeight = window.innerHeight * 0.85; 
+      // 1. JAVÍTÁS: Stabilabb logika a gomb megjelenítésére
       const resSection = document.getElementById("reservation");
       let hideAtBottom = false;
-      
+
       if (resSection) {
-        if (latest + window.innerHeight > resSection.offsetTop + 200) {
+        const rect = resSection.getBoundingClientRect();
+        // Ha a kapcsolat szekció teteje beér a képernyőre, elrejtjük a gombot
+        if (rect.top < window.innerHeight) {
           hideAtBottom = true;
         }
       }
 
-      const shouldShow = latest > heroHeight && !hideAtBottom;
-      setShowStickyBtn((prev) => (prev !== shouldShow ? shouldShow : prev));
+      // Fix 500px görgetés után stabilan megjelenik, ha nem vagyunk legalul
+      setShowStickyBtn(latest > 500 && !hideAtBottom);
+
+      // SIDE SCROLL SZEKCIÓ FIGYELÉSE A NAVBAR HÁTTÉRTÉHEZ
+      const menuSection = document.getElementById("menu");
+      if (menuSection) {
+        const rect = menuSection.getBoundingClientRect();
+        setIsSolidBg(rect.top <= 80);
+      }
     }
   });
 
@@ -208,12 +231,13 @@ useMotionValueEvent(scrollY, "change", (latest) => {
 
   return (
     <div className="bg-[#050505] overflow-x-clip selection:bg-[#E7918A] selection:text-white font-sans text-white relative">
-      
+
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
       <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
 
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         html { overflow-y: scroll; scroll-behavior: smooth; background-color: #050505; }
         * { -webkit-font-smoothing: antialiased; }
         body, p, a, button, li, span, div, .font-sans { font-family: 'Work Sans', sans-serif !important; }
@@ -232,7 +256,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
         }
       `}} />
       <div className="noise-bg"></div>
-{/* --- PRELOADER SÖTÉT HÁTTÉR --- */}
+      {/* --- PRELOADER SÖTÉT HÁTTÉR --- */}
       <AnimatePresence>
         {isLoading && (
           <motion.div
@@ -277,16 +301,90 @@ useMotionValueEvent(scrollY, "change", (latest) => {
         <motion.div style={{ y: orb4Y }} className="absolute top-[90%] right-[10%] w-[50vw] h-[50vw] rounded-full bg-[#E7918A]/25 blur-[170px]" />
       </div>
 
+{/* --- ESEMÉNY POPUP (Sima alulról felcsúszó animáció) --- */}
+      <AnimatePresence>
+        {showEventPopup && (
+          <motion.div
+            initial={{ opacity: 0, y: 40 }} 
+            animate={{ opacity: 1, y: 0 }}
+            exit={{ opacity: 0, y: 40 }}
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            whileHover={{ y: -6, transition: { duration: 0.3, ease: "easeOut" } }}
+            onClick={() => window.location.href = '/hu/events'}
+            className="fixed bottom-6 left-6 md:bottom-10 md:left-10 z-[9980] w-[260px] md:w-[300px] aspect-[3/4] bg-[#050505] rounded-sm overflow-hidden group cursor-pointer border border-white/10"
+            style={{
+              boxShadow: "0 0 150px 40px rgba(0,0,0,0.95), 0 30px 80px 20px rgba(0,0,0,0.9), 0 0 50px 10px rgba(231,145,138,0.15)"
+            }}
+          >
+            {/* Háttérkép */}
+            <img 
+              src="https://images.unsplash.com/photo-1516997121675-4c2d1684aa3e?q=80&w=400&auto=format&fit=crop" 
+              className="absolute inset-0 w-full h-full object-cover transform group-hover:scale-110 transition-all duration-1000 ease-out" 
+              alt="Event" 
+            />
+            
+            {/* ERŐSÍTETT sötétítő átmenet a maximális kontrasztért */}
+            <div className="absolute inset-0 bg-gradient-to-t from-[#050505] via-[#050505]/95 to-transparent"></div>
+            
+            <div className="absolute top-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/80 to-transparent"></div>
+            
+            <button 
+              onClick={(e) => { e.stopPropagation(); setShowEventPopup(false); }} 
+              className="absolute top-3 right-3 text-white/50 hover:text-white bg-black/20 hover:bg-black/60 backdrop-blur-md transition-all rounded-full z-20 p-2 flex items-center justify-center"
+              aria-label="Bezárás"
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M18 6L6 18M6 6l12 12"/></svg>
+            </button>
 
-{/* STICKY ASZTALFOGLALÁS GOMB */}
+            <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col z-10">
+              
+              <div className="flex items-center gap-2.5 mb-4">
+                <span className="relative flex h-2 w-2">
+                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E7918A] opacity-75"></span>
+                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#E7918A]"></span>
+                </span>
+                <span className="text-[#E7918A] text-[11px] md:text-[12px] uppercase tracking-[0.25em] font-bold drop-shadow-[0_0_5px_rgba(231,145,138,0.5)]">
+                  Ma Este
+                </span>
+              </div>
+              
+              {/* ERŐTELJES, DRÁMAI CÍM */}
+              <h3 className="text-white font-serif text-[38px] md:text-[46px] leading-[1] tracking-tight mb-2 drop-shadow-[0_4px_10px_rgba(0,0,0,0.8)]">
+                Luigi Rossi
+              </h3>
+              
+              {/* FIGYELEMFELKELTŐ ALCÍM */}
+              <p className="text-white font-sans text-[11px] md:text-[12px] font-bold uppercase tracking-[0.15em] mb-6 drop-shadow-md">
+                Guest Bartender Show
+              </p>
+
+              {/* Ragyogó Részletek gomb/vonal */}
+              <div className="flex items-center justify-between border-t border-white/20 pt-4 group-hover:border-[#E7918A]/60 transition-colors duration-500">
+                <span className="text-white text-[11px] md:text-[12px] uppercase tracking-[0.2em] font-bold group-hover:text-[#E7918A] group-hover:drop-shadow-[0_0_8px_rgba(231,145,138,0.5)] transition-all duration-500">
+                  Részletek
+                </span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="text-white group-hover:text-[#E7918A] transform group-hover:translate-x-1.5 transition-all duration-500 ease-out"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </div>
+
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+
+{/* STICKY ASZTALFOGLALÁS GOMB (Javított, konfliktusmentes animáció) */}
       <AnimatePresence>
         {showStickyBtn && (
-          <motion.a 
-            initial={{ opacity: 0, y: 15 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: 15 }} transition={{ duration: 0.2 }}
+          <motion.a
+            initial={{ opacity: 0, y: 40 }} 
+            animate={{ opacity: 1, y: 0 }} 
+            exit={{ opacity: 0, y: 40 }} 
+            transition={{ duration: 0.4, ease: "easeOut" }}
+            whileHover={{ scale: 1.1 }} // Ide került a hover nagyítás
             href="https://www.sevenrooms.com/explore/rosemezecocktailbar/reservations/create/search/" target="_blank" rel="noopener noreferrer"
-            className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[9999] w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#E7918A] text-white hover:bg-white hover:text-black transition-all duration-300 cursor-pointer block shadow-[0_0_20px_rgba(231,145,138,0.5)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] hover:scale-110"
+            // transition-all KICSERÉLVE transition-colors-ra, hover:scale KIVÉVE
+            className="fixed bottom-6 right-6 md:bottom-10 md:right-10 z-[9999] w-14 h-14 md:w-16 md:h-16 rounded-full bg-[#E7918A] text-white hover:bg-white hover:text-black transition-colors duration-300 cursor-pointer block shadow-[0_0_20px_rgba(231,145,138,0.5)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)]"
           >
-            <div className="absolute inset-0 flex items-center justify-center">
+            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
               <svg className="w-6 h-6 md:w-6 md:h-6 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
             </div>
           </motion.a>
@@ -310,10 +408,10 @@ useMotionValueEvent(scrollY, "change", (latest) => {
         )}
       </AnimatePresence>
 
-      <RoseNavbar 
-        isScrolled={isScrolled} 
-        isLoading={isLoading} 
-        isMobileMenuOpen={isMobileMenuOpen} 
+      <RoseNavbar
+        isScrolled={isScrolled}
+        isLoading={isLoading}
+        isMobileMenuOpen={isMobileMenuOpen}
         setIsMobileMenuOpen={setIsMobileMenuOpen}
         activePath="/hu"
         isSolidBg={isSolidBg}
@@ -330,8 +428,8 @@ useMotionValueEvent(scrollY, "change", (latest) => {
 
         <div className="relative z-20 max-w-[90rem] mx-auto w-full flex flex-col items-center text-center mt-20 md:mt-28 pb-32 lg:pb-24">
           <motion.div initial="hidden" animate={!isLoading ? "visible" : "hidden"} variants={staggerContainer} className="flex flex-col items-center">
-            <motion.h1 variants={fadeUpReveal} className="text-5xl sm:text-6xl md:text-7xl lg:text-[7.5rem] font-serif text-white tracking-tight leading-[1] max-w-5xl px-2 whitespace-pre-line drop-shadow-[0_0_35px_rgba(0,0,0,0.9)] uppercase">AZ ESTÉK<br/>ÚJ DIMENZIÓJA</motion.h1>
-            
+            <motion.h1 variants={fadeUpReveal} className="text-5xl sm:text-6xl md:text-7xl lg:text-[7.5rem] font-serif text-white tracking-tight leading-[1] max-w-5xl px-2 whitespace-pre-line drop-shadow-[0_0_35px_rgba(0,0,0,0.9)] uppercase">AZ ESTÉK<br />ÚJ DIMENZIÓJA</motion.h1>
+
             {/* --- EGYSÉGESÍTETT GOMBOK (HERO) --- */}
             <motion.div variants={fadeUpReveal} className="flex flex-col sm:flex-row gap-4 sm:gap-6 mt-12 md:mt-16">
               <a href="https://www.sevenrooms.com/explore/rosemezecocktailbar/reservations/create/search/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-[#E7918A] text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center shadow-[0_0_20px_rgba(231,145,138,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] rounded-sm min-w-[220px]">
@@ -357,10 +455,10 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                 </div>
               </div>
               <div className="flex items-center gap-2.5 mt-1">
-                 <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center p-[6px] md:p-[7px] flex-shrink-0 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
-                   <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
-                 </div>
-                 <p className="text-white/90 font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-medium text-center md:text-right drop-shadow-md">300+ Google értékelés</p>
+                <div className="w-7 h-7 md:w-8 md:h-8 rounded-full bg-white flex items-center justify-center p-[6px] md:p-[7px] flex-shrink-0 shadow-[0_0_15px_rgba(255,255,255,0.3)]">
+                  <svg className="w-full h-full" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92c-.26 1.37-1.04 2.53-2.21 3.31v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.09z" fill="#4285F4" /><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853" /><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#FBBC05" /><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335" /></svg>
+                </div>
+                <p className="text-white/90 font-sans text-[10px] md:text-[11px] uppercase tracking-[0.2em] font-medium text-center md:text-right drop-shadow-md">300+ Google értékelés</p>
               </div>
             </motion.a>
           </motion.div>
@@ -374,19 +472,19 @@ useMotionValueEvent(scrollY, "change", (latest) => {
             <motion.div initial={{ opacity: 0, x: -30 }} whileInView={{ opacity: 1, x: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} className="w-[80vw] md:w-[32vw] flex flex-col justify-center items-start flex-shrink-0 pr-8 relative z-10">
               <motion.h4 className="text-[#E7918A] font-sans text-[11px] md:text-[13px] font-bold uppercase tracking-[0.25em] mb-4 md:mb-5 drop-shadow-[0_0_10px_rgba(231,145,138,0.3)]">Kínálatunk</motion.h4>
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif text-white tracking-tight leading-tight uppercase mb-8">SIGNATURE <br /> KOKTÉLOK</h2>
-              
+
               {/* --- EGYSÉGESÍTETT GOMB (SECONDARY) --- */}
               <motion.a href="/hu/menu" className="inline-flex items-center justify-center bg-transparent backdrop-blur-sm border border-white/30 text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] rounded-sm mt-2 w-max">
                 Teljes Itallap Megtekintése
               </motion.a>
-              
+
             </motion.div>
             {DISHES.map((dish, idx) => (
               <motion.div key={idx} initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-50px" }} transition={{ duration: 0.6, delay: 0.1 * (idx % 3) }} className="w-[85vw] sm:w-[50vw] md:w-[450px] lg:w-[550px] flex flex-col group flex-shrink-0 cursor-pointer relative z-10">
                 <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#0A0A0A] shadow-[0_15px_40px_rgba(0,0,0,0.5)] rounded-sm border border-white/5">
                   <img src={dish.img} alt={dish.name} className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700 ease-out opacity-90 group-hover:opacity-100" />
                   <div className="absolute inset-0 bg-[#050505]/70 opacity-0 group-hover:opacity-100 transition-all duration-500 z-20 flex flex-col justify-center items-center p-8 backdrop-blur-md">
-                     <p className="text-white/95 text-center font-sans text-[14px] md:text-[15px] leading-relaxed translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">{dish.info}</p>
+                    <p className="text-white/95 text-center font-sans text-[14px] md:text-[15px] leading-relaxed translate-y-4 group-hover:translate-y-0 transition-transform duration-500 ease-out">{dish.info}</p>
                   </div>
                   <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/80 to-transparent scale-x-0 group-hover:scale-x-100 transition-transform duration-700 z-30"></div>
                 </div>
@@ -401,25 +499,33 @@ useMotionValueEvent(scrollY, "change", (latest) => {
       </section>
 
       <section id="about" className="relative w-full py-28 lg:py-40 bg-transparent px-6 lg:px-16 flex justify-center">
-        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-14 lg:gap-20 relative z-10">
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1, ease: "easeOut" }} className="w-full lg:w-1/2">
-            <div className="relative w-full aspect-[3/4] lg:aspect-square overflow-hidden shadow-[0_20px_50px_rgba(231,145,138,0.1)] bg-[#111111] rounded-sm">
+        <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-stretch gap-8 lg:gap-12 relative z-10 w-full">
+
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1, ease: "easeOut" }} className="w-full lg:w-1/2 relative min-h-[300px] lg:min-h-0">
+            {/* JAVÍTÁS: Az "absolute inset-0" garantálja, hogy a bal oldalnak nincs saját magassága, kizárólag a jobb oldali szöveg magasságát veszi fel! */}
+            <div className="absolute inset-0 overflow-hidden shadow-[0_20px_50px_rgba(231,145,138,0.1)] bg-[#111111] rounded-sm border border-white/5">
               <div className="absolute inset-0 bg-black/10 z-10" />
               <img src="/rose8.jpg" alt="Rose Koktélok" className="w-full h-full object-cover" />
             </div>
           </motion.div>
-          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1, delay: 0.2, ease: "easeOut" }} className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left bg-[#111111]/60 backdrop-blur-md border border-white/10 p-8 md:p-12 shadow-[0_15px_40px_rgba(231,145,138,0.05)] rounded-sm relative">
+
+          <motion.div initial={{ opacity: 0, y: 30 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true, margin: "-100px" }} transition={{ duration: 1, delay: 0.2, ease: "easeOut" }} className="w-full lg:w-1/2 flex flex-col justify-center text-center lg:text-left bg-[#111111]/60 backdrop-blur-md border border-white/10 p-8 lg:p-10 shadow-[0_15px_40px_rgba(231,145,138,0.05)] rounded-sm relative">
             <div className="absolute bottom-0 left-0 w-full h-[1px] bg-gradient-to-r from-transparent via-[#E7918A]/40 to-transparent"></div>
-            <motion.h4 className="text-[#E7918A] font-sans text-[11px] md:text-[13px] font-bold uppercase tracking-[0.25em] mb-4 md:mb-5 drop-shadow-[0_0_8px_rgba(231,145,138,0.4)]">Koktélok & Mezzék</motion.h4>
-            <h2 className="text-3xl md:text-4xl lg:text-4xl font-serif text-white tracking-tight leading-[1.2] mb-8">Ahol a prémium italok és a modern anatóliai ízek találkoznak</h2>
-            <div className="flex flex-col gap-4 text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed max-w-lg mx-auto lg:mx-0 text-left">
+
+            {/* JAVÍTÁS: Kisebb margók (mb-3, mb-5, gap-3), hogy a kártya sokkal kompaktabb és feszesebb legyen */}
+            <motion.h4 className="text-[#E7918A] font-sans text-[11px] md:text-[12px] font-bold uppercase tracking-[0.25em] mb-3 drop-shadow-[0_0_8px_rgba(231,145,138,0.4)]">Koktélok & Mezzék</motion.h4>
+            <h2 className="text-3xl md:text-4xl lg:text-4xl font-serif text-white tracking-tight leading-[1.2] mb-5">Ahol a prémium italok és a modern anatóliai ízek találkoznak</h2>
+
+            <div className="flex flex-col gap-3 text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed max-w-lg mx-auto lg:mx-0 text-left">
               <p>A ROSE több, mint egy bár – egy élmény, ahol az éjszaka minden érzékét egyszerre szólítjuk meg. Signature koktéljainkat szenvedéllyel és szakértelemmel készítjük, hogy az ízek tökéletes harmóniáját nyújtsák a pohárban.</p>
               <p>Italaink mellé séfünk olyan modern, megosztható mezzéket (kis tányéros fogásokat) álmodott meg, melyek kiegészítik és felerősítik a prémium párlatok karakterét. Laza elegancia, lüktető deep house ritmusok és egy társaság, amellyel az este sosem ér véget.</p>
               <p>A ROSE a tökéletes választás a vacsora utáni levezetéshez, vagy az éjszaka stílusos beindításához a belváros szívében.</p>
             </div>
           </motion.div>
+
         </div>
       </section>
+
 
       <section id="why-us" className="relative py-28 lg:py-40 bg-transparent overflow-hidden">
         <div className="relative z-10 max-w-[90rem] mx-auto px-6 lg:px-12">
@@ -428,26 +534,26 @@ useMotionValueEvent(scrollY, "change", (latest) => {
             <motion.h2 variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="text-4xl md:text-5xl lg:text-6xl font-serif text-white uppercase tracking-tight drop-shadow-md">A TÖKÉLETESSÉG RÉSZLETEI</motion.h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-16 lg:gap-12">
-             <motion.div variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col items-start text-left relative p-10 bg-[#111111]/80 backdrop-blur-md rounded-sm border border-white/10 shadow-[0_15px_40px_rgba(231,145,138,0.1)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(231,145,138,0.2)]">
-                <div className="text-[#E7918A] font-serif text-5xl md:text-6xl mb-6 font-light drop-shadow-[0_0_15px_rgba(231,145,138,0.4)]">01</div>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wide mb-4">Kézműves Koktélok</h3>
-                <p className="text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed">Nemzedékeken átívelő technikák és modern mixológia találkozása. Prémium párlatok, házi szirupok és infúziók minden pohárban.</p>
-                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/60 to-transparent scale-x-100"></div>
-             </motion.div>
-             
-             <motion.div variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.2 }} className="flex flex-col items-start text-left relative p-10 bg-[#111111]/80 backdrop-blur-md rounded-sm border border-white/10 shadow-[0_15px_40px_rgba(231,145,138,0.1)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(231,145,138,0.2)]">
-                <div className="text-[#E7918A] font-serif text-5xl md:text-6xl mb-6 font-light drop-shadow-[0_0_15px_rgba(231,145,138,0.4)]">02</div>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wide mb-4">Modern Mezzék</h3>
-                <p className="text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed">Nem csak az italokra fókuszálunk. Laza, megosztható anatóliai ínyencfalatjaink tökéletesen kísérik az éjszaka ritmusát.</p>
-                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/60 to-transparent scale-x-100"></div>
-             </motion.div>
-             
-             <motion.div variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.4 }} className="flex flex-col items-start text-left relative p-10 bg-[#111111]/80 backdrop-blur-md rounded-sm border border-white/10 shadow-[0_15px_40px_rgba(231,145,138,0.1)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(231,145,138,0.2)]">
-                <div className="text-[#E7918A] font-serif text-5xl md:text-6xl mb-6 font-light drop-shadow-[0_0_15px_rgba(231,145,138,0.4)]">03</div>
-                <h3 className="text-2xl font-serif text-white uppercase tracking-wide mb-4">Exkluzív Atmoszféra</h3>
-                <p className="text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed">A budapesti éjszaka új fénypontja. Elbűvölő dizájn, kényelmes lounge és pezsgő ritmusok garantálják a prémium élményt.</p>
-                <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/60 to-transparent scale-x-100"></div>
-             </motion.div>
+            <motion.div variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} className="flex flex-col items-start text-left relative p-10 bg-[#111111]/80 backdrop-blur-md rounded-sm border border-white/10 shadow-[0_15px_40px_rgba(231,145,138,0.1)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(231,145,138,0.2)]">
+              <div className="text-[#E7918A] font-serif text-5xl md:text-6xl mb-6 font-light drop-shadow-[0_0_15px_rgba(231,145,138,0.4)]">01</div>
+              <h3 className="text-2xl font-serif text-white uppercase tracking-wide mb-4">Kézműves Koktélok</h3>
+              <p className="text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed">Nemzedékeken átívelő technikák és modern mixológia találkozása. Prémium párlatok, házi szirupok és infúziók minden pohárban.</p>
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/60 to-transparent scale-x-100"></div>
+            </motion.div>
+
+            <motion.div variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.2 }} className="flex flex-col items-start text-left relative p-10 bg-[#111111]/80 backdrop-blur-md rounded-sm border border-white/10 shadow-[0_15px_40px_rgba(231,145,138,0.1)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(231,145,138,0.2)]">
+              <div className="text-[#E7918A] font-serif text-5xl md:text-6xl mb-6 font-light drop-shadow-[0_0_15px_rgba(231,145,138,0.4)]">02</div>
+              <h3 className="text-2xl font-serif text-white uppercase tracking-wide mb-4">Modern Mezzék</h3>
+              <p className="text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed">Nem csak az italokra fókuszálunk. Laza, megosztható anatóliai ínyencfalatjaink tökéletesen kísérik az éjszaka ritmusát.</p>
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/60 to-transparent scale-x-100"></div>
+            </motion.div>
+
+            <motion.div variants={fadeUpReveal} initial="hidden" whileInView="visible" viewport={{ once: true }} transition={{ delay: 0.4 }} className="flex flex-col items-start text-left relative p-10 bg-[#111111]/80 backdrop-blur-md rounded-sm border border-white/10 shadow-[0_15px_40px_rgba(231,145,138,0.1)] transition-shadow duration-500 hover:shadow-[0_20px_50px_rgba(231,145,138,0.2)]">
+              <div className="text-[#E7918A] font-serif text-5xl md:text-6xl mb-6 font-light drop-shadow-[0_0_15px_rgba(231,145,138,0.4)]">03</div>
+              <h3 className="text-2xl font-serif text-white uppercase tracking-wide mb-4">Exkluzív Atmoszféra</h3>
+              <p className="text-white/70 font-sans text-[14px] md:text-[15px] leading-relaxed">A budapesti éjszaka új fénypontja. Elbűvölő dizájn, kényelmes lounge és pezsgő ritmusok garantálják a prémium élményt.</p>
+              <div className="absolute bottom-0 left-0 w-full h-[2px] bg-gradient-to-r from-transparent via-[#E7918A]/60 to-transparent scale-x-100"></div>
+            </motion.div>
           </div>
         </div>
       </section>
@@ -472,7 +578,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
               </motion.a>
             ))}
           </motion.div>
-          
+
           {/* --- EGYSÉGESÍTETT GOMB (SECONDARY) --- */}
           <motion.a initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8 }} href="https://www.instagram.com/rose_budapest/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-transparent backdrop-blur-sm border border-white/30 text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] rounded-sm">
             Kövessen minket Instagramon
@@ -508,10 +614,10 @@ useMotionValueEvent(scrollY, "change", (latest) => {
       </section>
 
       <div className="w-full bg-transparent text-white flex flex-col relative z-20">
-        
+
         <section id="reservation" className="relative pt-24 lg:pt-32 pb-16 lg:pb-24 bg-transparent">
-          <div className="absolute inset-x-0 -bottom-1 h-[200px] md:h-[300px] bg-gradient-to-t from-[#050505] to-transparent pointer-events-none z-0"></div>
-          
+          <div className="absolute inset-x-0 -bottom-1 h-[100px] md:h-[150px] bg-gradient-to-t from-[#050505] to-transparent pointer-events-none z-0"></div>
+
           <div className="relative z-10 w-full max-w-[90rem] mx-auto px-6 lg:px-12 text-white">
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} variants={staggerContainer} className="flex flex-col items-center">
               <div className="flex flex-col items-center text-center mb-16 w-full">
@@ -525,7 +631,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                   <p className="mb-1 font-sans text-[15px] text-white/70">Elite Meat House</p>
                   <p className="mb-1 font-sans text-[15px] text-white/70">(ROSE Bar)</p>
                   <p className="mb-10 font-sans text-[15px] text-white/90 font-medium">1051 BUDAPEST Nádor u. 36</p>
-                  
+
                   {/* --- EGYSÉGESÍTETT GOMB (SECONDARY) --- */}
                   <a href="https://goo.gl/maps/82ENcK2az5Rv4q4S8" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-transparent backdrop-blur-sm border border-white/30 text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] rounded-sm">
                     Navigáció
@@ -550,7 +656,7 @@ useMotionValueEvent(scrollY, "change", (latest) => {
                     <a href="https://www.facebook.com/p/Rose-Budapest-61557349107966/" target="_blank" rel="noopener noreferrer" className="hover:text-[#E7918A] transition-colors" aria-label="Facebook"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a>
                     <a href="https://www.instagram.com/rose_budapest/" target="_blank" rel="noopener noreferrer" className="hover:text-[#E7918A] transition-colors" aria-label="Instagram"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg></a>
                   </div>
-                  
+
                   {/* --- EGYSÉGESÍTETT GOMB (PRIMARY) --- */}
                   <a href="https://www.sevenrooms.com/explore/rosemezecocktailbar/reservations/create/search/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-[#E7918A] text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center shadow-[0_0_20px_rgba(231,145,138,0.4)] hover:shadow-[0_0_30px_rgba(255,255,255,0.6)] rounded-sm">
                     Asztalfoglalás
@@ -565,22 +671,26 @@ useMotionValueEvent(scrollY, "change", (latest) => {
           <div className="absolute inset-0 z-0">
             <motion.img src="/_turkiz2.jpg" alt="Türkiz Restaurant" className="w-full h-full object-cover origin-center" style={{ y: turkizBgY, scale: 1.15 }} />
             <div className="absolute inset-0 bg-black/60 z-10"></div>
-            <div className="absolute inset-x-0 -top-1 h-48 md:h-72 bg-gradient-to-b from-[#050505] via-[#050505]/90 to-transparent z-10"></div>
-            <div className="absolute inset-x-0 -bottom-1 h-48 md:h-72 bg-gradient-to-t from-[#050505] via-[#050505]/90 to-transparent z-10"></div>
+
+            {/* JAVÍTÁS: Felül jóval nagyobb, elnyújtott átmenet */}
+            <div className="absolute inset-x-0 -top-1 h-48 md:h-64 bg-gradient-to-b from-[#050505] via-[#050505]/90 to-transparent z-10"></div>
+
+            {/* JAVÍTÁS: Alul kisebb, finomabb átmenet a footer felé */}
+            <div className="absolute inset-x-0 -bottom-1 h-16 md:h-24 bg-gradient-to-t from-[#050505] via-[#050505]/80 to-transparent z-10"></div>
           </div>
-          
+
           <div className="relative z-20 max-w-2xl mx-auto px-6 lg:px-12 w-full flex flex-col items-center justify-center text-center mt-8">
-             <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{once: true}} className="mb-8 w-[90px] h-[120px] md:w-[120px] md:h-[160px] drop-shadow-xl">
-               <TurkizLogo isWhite={true} isScrolled={false} />
-             </motion.div>
-             <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} viewport={{once: true}} className="text-white/80 font-sans text-[14px] md:text-[15px] leading-relaxed mb-8 drop-shadow-md max-w-xl">
-               Kezdje az estét egy autentikus anatóliai vacsorával a TÜRKIZ étteremben, mielőtt átadná magát a ROSE utánozhatatlan éjszakai hangulatának.
-             </motion.p>
-             
-             {/* --- EGYSÉGESÍTETT GOMB (SECONDARY) --- */}
-             <motion.a initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }} viewport={{once: true}} href="https://turkiz-budapest-demo.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-transparent backdrop-blur-sm border border-white/30 text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] rounded-sm">
-               Felfedezem a Türkizt
-             </motion.a>
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1 }} viewport={{ once: true }} className="mb-8 w-[90px] h-[120px] md:w-[120px] md:h-[160px] drop-shadow-xl">
+              <TurkizLogo isWhite={true} isScrolled={false} />
+            </motion.div>
+            <motion.p initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.2 }} viewport={{ once: true }} className="text-white/80 font-sans text-[14px] md:text-[15px] leading-relaxed mb-8 drop-shadow-md max-w-xl">
+              Kezdje az estét egy autentikus anatóliai vacsorával a TÜRKIZ étteremben, mielőtt átadná magát a ROSE utánozhatatlan éjszakai hangulatának.
+            </motion.p>
+
+            {/* --- EGYSÉGESÍTETT GOMB (SECONDARY) --- */}
+            <motion.a initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 1, delay: 0.3 }} viewport={{ once: true }} href="https://turkiz-budapest-demo.vercel.app/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center bg-transparent backdrop-blur-sm border border-white/30 text-white px-10 py-4 uppercase font-sans tracking-[0.2em] text-[11px] md:text-[12px] font-bold hover:bg-white hover:text-black transition-all duration-300 text-center hover:shadow-[0_0_20px_rgba(255,255,255,0.4)] rounded-sm">
+              Felfedezem a Türkizt
+            </motion.a>
           </div>
         </section>
 
