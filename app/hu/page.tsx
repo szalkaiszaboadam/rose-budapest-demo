@@ -255,6 +255,7 @@ export default function RoseLuxury() {
           z-index: 9996;
         }
       `}} />
+      
       <div className="noise-bg"></div>
       {/* --- PRELOADER SÖTÉT HÁTTÉR --- */}
       <AnimatePresence>

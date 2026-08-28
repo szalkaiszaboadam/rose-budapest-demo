@@ -105,12 +105,16 @@ export default function RoseEventsPage() {
     // Teljes képernyő (100dvh), görgetés letiltva (overflow-hidden)
     <div className="h-[100dvh] w-screen overflow-hidden bg-[#050505] text-white relative flex flex-col selection:bg-[#E7918A]">
       
-      <style dangerouslySetInnerHTML={{__html: `
-        /* FÜGGŐLEGES GÖRGETÉS TELJES LETILTÁSA GLOBÁLISAN IS */
-        html, body { overflow: hidden !important; height: 100%; width: 100%; margin: 0; padding: 0; background-color: #050505; }
+         <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+      <link href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Work+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+      <style dangerouslySetInnerHTML={{
+        __html: `
+        html { overflow-y: scroll; scroll-behavior: smooth; background-color: #050505; }
+        * { -webkit-font-smoothing: antialiased; }
         body, p, a, button, li, span, div, .font-sans { font-family: 'Work Sans', sans-serif !important; }
         h1, h2, h3, h4, h5, h6, .font-serif { font-family: 'Cormorant', serif !important; }
-        
         .hide-scrollbar::-webkit-scrollbar { display: none; }
         .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
         
@@ -124,6 +128,7 @@ export default function RoseEventsPage() {
           z-index: 9996;
         }
       `}} />
+
       <div className="noise-bg"></div>
       {/* --- PRELOADER SÖTÉT HÁTTÉR --- */}
       <AnimatePresence>
