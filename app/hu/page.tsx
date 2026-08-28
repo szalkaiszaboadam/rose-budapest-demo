@@ -339,10 +339,6 @@ export default function RoseLuxury() {
             <div className="absolute bottom-0 left-0 w-full p-6 md:p-8 flex flex-col z-10">
               
               <div className="flex items-center gap-2.5 mb-4">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#E7918A] opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-[#E7918A]"></span>
-                </span>
                 <span className="text-[#E7918A] text-[11px] md:text-[12px] uppercase tracking-[0.25em] font-bold drop-shadow-[0_0_5px_rgba(231,145,138,0.5)]">
                   Ma Este
                 </span>
