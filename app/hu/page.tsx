@@ -350,7 +350,7 @@ export default function RoseLuxury() {
               </h3>
               
               {/* FIGYELEMFELKELTŐ ALCÍM */}
-              <p className="text-white font-sans text-[11px] md:text-[12px] font-bold uppercase tracking-[0.15em] mb-6 drop-shadow-md">
+              <p className="text-white font-sans text-[11px] md:text-[12px] font-bold mb-6 drop-shadow-md">
                 Guest Bartender Show
               </p>
 
